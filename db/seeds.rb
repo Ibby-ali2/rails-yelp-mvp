@@ -7,3 +7,13 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Restaurant.destroy_all
+
+Restaurant.create!(name:"Nandos", address:"123 test street", category:"italian", phone_number:"02023548392")
+Restaurant.create!(name:"Bobs Burgers", address:"123 test street", category:"belgian")
+Restaurant.create!(name:"Gaucho", address:"123 test street", category:"chinese")
+Restaurant.create!(name:"BunBunBun", address:"123 test street", category:"italian")
+Restaurant.create!(name:"NamNam", address:"123 test street", category:"japanese")
+
+puts "Finished! Created #{Restaurant.count} restaurants."
